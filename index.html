@@ -137,6 +137,75 @@ nav svg,.mg svg{filter:drop-shadow(0 2px 5px rgba(196,181,148,.10))}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 </style>
 
+
+<style id="vigor-prime-ui-v2">
+/* Visible interface refinement: premium dashboard, hierarchy and navigation */
+:root{--ac:#b9aa88;--am:#c4b594;--sf:#151719;--sf2:#202325}
+body{
+ background:
+ radial-gradient(ellipse at 12% 4%,rgba(190,171,133,.10),transparent 28%),
+ radial-gradient(ellipse at 88% 18%,rgba(190,171,133,.055),transparent 24%),
+ linear-gradient(180deg,#0b0c0e 0%,#101213 48%,#090a0b 100%)!important;
+ background-attachment:fixed!important
+}
+main{padding-top:30px!important}
+main:before{
+ content:"V I G O R   /   P R I M E";
+ display:block;color:#a99b7d;font-size:9px;font-weight:700;
+ letter-spacing:.24em;margin:0 0 17px 2px;opacity:.9
+}
+h1{font-size:32px!important;line-height:1.08!important;letter-spacing:-.055em!important;margin:0 0 20px!important}
+h1:after{width:48px!important;height:2px!important;bottom:-8px!important}
+h2{font-size:15px!important;text-transform:uppercase;letter-spacing:.09em!important;color:#d8d2c4;margin-bottom:13px!important}
+h2:before{width:3px!important;height:16px!important}
+.card,.mg button{
+ border:1px solid rgba(202,188,157,.13)!important;
+ border-radius:20px!important;
+ background:linear-gradient(145deg,rgba(28,31,31,.98),rgba(17,19,20,.98))!important;
+ box-shadow:0 12px 30px rgba(0,0,0,.24),inset 0 1px rgba(255,255,255,.025)!important;
+ padding:17px!important;margin-bottom:14px!important
+}
+.card.hero{
+ min-height:190px;position:relative;isolation:isolate;overflow:hidden;
+ background:radial-gradient(ellipse at 82% 45%,rgba(190,171,133,.13),transparent 40%),linear-gradient(135deg,#242522,#151718 65%,#111314)!important;
+ border-color:rgba(201,184,147,.28)!important
+}
+.card.hero:after{
+ content:"";position:absolute;z-index:-1;width:185px;height:185px;right:-85px;top:-85px;border-radius:50%;
+ border:1px solid rgba(196,181,148,.16);
+ box-shadow:0 0 0 13px rgba(196,181,148,.025),0 0 0 28px rgba(196,181,148,.018),inset 0 0 35px rgba(196,181,148,.06)
+}
+.card.hero .mu{text-transform:uppercase;letter-spacing:.12em;font-size:10px}
+.big{font-size:48px!important;letter-spacing:-.06em;line-height:1!important}
+.stats{gap:9px!important}
+.stats>div{background:linear-gradient(160deg,#202322,#151718)!important;border:1px solid rgba(196,181,148,.12);border-radius:15px;padding:13px 6px!important}
+.stats b{font-size:26px!important;letter-spacing:-.05em}
+.mu{color:#a09f98!important}
+button{border:1px solid rgba(196,181,148,.16)!important;border-radius:13px!important;background:linear-gradient(180deg,#292d2c,#202323)!important;box-shadow:0 4px 12px rgba(0,0,0,.16);font-weight:650!important}
+button.pr{background:linear-gradient(135deg,#d1c3a2,#aa9975)!important;color:#171714!important;border:1px solid #d0c09c!important;box-shadow:0 6px 17px rgba(0,0,0,.25),inset 0 1px rgba(255,255,255,.3)!important}
+button:active{transform:scale(.975)}
+input,select{background:#1b1f1f!important;border:1px solid rgba(196,181,148,.15)!important;border-radius:12px!important;padding:11px 12px!important}
+.bar{height:9px!important;background:#292d2c!important;border-radius:20px!important;overflow:hidden}
+.bar i{background:linear-gradient(90deg,#887b60,#d0bf9b)!important;border-radius:20px;box-shadow:0 0 12px rgba(196,181,148,.18)}
+nav{
+ padding:9px 7px calc(9px + env(safe-area-inset-bottom,0px))!important;
+ background:rgba(13,15,15,.94)!important;border-top:1px solid rgba(196,181,148,.16)!important;
+ box-shadow:0 -12px 32px rgba(0,0,0,.38)!important
+}
+nav button{border:0!important;box-shadow:none!important;border-radius:13px!important;color:#888b86!important}
+nav button.on{background:rgba(196,181,148,.10)!important;color:#e0d2b2!important}
+nav button.on:after{top:2px!important;width:18px!important;height:2px!important}
+.mg{gap:12px!important}
+.mg button{min-height:112px!important;justify-content:center!important}
+.mg svg{color:#c4b594!important;width:27px!important;height:27px!important}
+.cd{background:linear-gradient(145deg,#202423,#171a1a)!important;border:1px solid rgba(196,181,148,.10)!important;border-radius:12px!important}
+.cd.td{border-color:#b9aa88!important;box-shadow:inset 0 0 0 1px rgba(196,181,148,.16)!important}
+.cd.sel{background:linear-gradient(135deg,#d1c3a2,#aa9975)!important;color:#171714!important}
+.tip{background:linear-gradient(90deg,rgba(196,181,148,.09),transparent)!important;border-left-color:#b9aa88!important;border-radius:0 10px 10px 0;padding:9px 12px!important}
+@media(max-width:420px){main{padding:23px 14px 112px!important}.card{padding:15px!important}h1{font-size:29px!important}.card.hero{min-height:172px}}
+@media(prefers-reduced-motion:no-preference){.card,.mg button{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}.card:active{transform:scale(.995)}}
+</style>
+
 </head>
 <body>
 <main id="app"></main>
