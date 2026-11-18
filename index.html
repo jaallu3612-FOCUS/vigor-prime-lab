@@ -97,7 +97,47 @@ button:focus-visible,input:focus,select:focus{outline:2px solid #b9aa88}
 .tip{border-left-color:#b9aa88}
 canvas{background:#101213}
 @media(min-width:700px){main{padding-top:34px}}
-</style></head>
+</style>
+<style id="vigor-prime-details">
+/* Refined premium details — keeps the existing layout and functionality */
+:root{--line:rgba(196,181,148,.16);--soft:rgba(255,255,255,.035);--gold:#c4b594}
+body{background-color:#0b0c0e;background-image:radial-gradient(ellipse at 50% -18%,rgba(196,181,148,.10),transparent 48%),linear-gradient(180deg,#0b0c0e 0%,#0d0f10 52%,#0a0b0c 100%);background-attachment:fixed}
+main{position:relative}
+h1{position:relative;padding:0 0 13px;margin-bottom:17px;font-family:"Bricolage Grotesque",Inter,system-ui,sans-serif}
+h1:after{content:"";position:absolute;left:0;bottom:0;width:34px;height:2px;border-radius:3px;background:linear-gradient(90deg,var(--gold),transparent)}
+h2{display:flex;align-items:center;gap:9px}
+h2:before{content:"";display:inline-block;width:3px;height:14px;border-radius:4px;background:var(--gold);opacity:.8}
+.card,.mg button{position:relative;overflow:hidden;transition:border-color .22s ease,transform .22s ease,box-shadow .22s ease}
+.card:before,.mg button:before{content:"";position:absolute;left:18px;right:18px;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(196,181,148,.28),transparent);pointer-events:none}
+.card.hero{background:radial-gradient(ellipse at 100% 0%,rgba(196,181,148,.09),transparent 48%),linear-gradient(145deg,#1b1d1d,#131516 72%);border-color:#353832}
+.card.hero:after{content:"";position:absolute;width:120px;height:120px;right:-65px;bottom:-76px;border:1px solid rgba(196,181,148,.10);border-radius:50%;box-shadow:0 0 0 14px rgba(196,181,148,.025),0 0 0 29px rgba(196,181,148,.018);pointer-events:none}
+.stats>div{padding:9px 4px;border:1px solid rgba(255,255,255,.035);border-radius:12px;background:rgba(255,255,255,.018)}
+.stats b{font-family:"Bricolage Grotesque",Inter,sans-serif;letter-spacing:-.045em}
+button{transition:transform .16s ease,border-color .2s ease,background .2s ease,box-shadow .2s ease}
+button:hover{border-color:rgba(196,181,148,.35);background-color:#2c302f}
+button.pr{background:linear-gradient(135deg,#c9bd9f,#a99a78);border-color:#c4b594;color:#171714;box-shadow:0 5px 16px rgba(0,0,0,.18),inset 0 1px rgba(255,255,255,.28)}
+button.pr:hover{background:linear-gradient(135deg,#d6c9aa,#b5a583);box-shadow:0 7px 20px rgba(0,0,0,.25)}
+input,select{transition:border-color .2s ease,background .2s ease}
+input:focus,select:focus{background:#252827;border-color:rgba(196,181,148,.45)!important;outline:none!important;box-shadow:0 0 0 3px rgba(196,181,148,.08)}
+.bar{background:#292d2b;border:1px solid rgba(255,255,255,.025);height:9px}
+.bar i{background:linear-gradient(90deg,#8f8266,#c4b594);border-radius:8px;box-shadow:0 0 10px rgba(196,181,148,.16)}
+.bars span{background:linear-gradient(180deg,#c4b594,#82765e);box-shadow:0 0 12px rgba(196,181,148,.08)}
+nav{box-shadow:0 -10px 30px rgba(0,0,0,.22)}
+nav button{position:relative;transition:color .2s ease,background .2s ease}
+nav button.on{color:#d0c3a4;background:rgba(196,181,148,.075);border-radius:12px}
+nav button.on:after{content:"";position:absolute;top:3px;left:50%;transform:translateX(-50%);width:15px;height:2px;border-radius:4px;background:#c4b594}
+nav svg,.mg svg{filter:drop-shadow(0 2px 5px rgba(196,181,148,.10))}
+.cd{border:1px solid rgba(255,255,255,.035);transition:border-color .2s ease,background .2s ease}
+.cd.td{border-color:rgba(196,181,148,.55);outline:none;box-shadow:inset 0 0 0 1px rgba(196,181,148,.12)}
+.cd.sel{background:linear-gradient(145deg,#cbbd9e,#a99a78);border-color:#c4b594}
+.tip{border-left-width:2px;background:linear-gradient(90deg,rgba(196,181,148,.055),transparent);padding-top:5px;padding-bottom:5px}
+.mu{letter-spacing:.005em}
+@media(hover:hover){.card:hover{border-color:rgba(196,181,148,.23);box-shadow:0 12px 30px rgba(0,0,0,.24)}.mg button:hover{transform:translateY(-2px)}}
+@media(max-width:420px){main{padding-left:14px;padding-right:14px}h1{font-size:28px}.card{border-radius:17px;padding:13px}.stats{gap:6px}.stats b{font-size:21px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+
+</head>
 <body>
 <main id="app"></main>
 <nav id="nav"></nav>
